@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login de Instagram</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1> Instagram</h1>
+        <div class="login-form">
+            <input type="text" id="email" placeholder="Email" autocomplete="off" required>
+            <input type="password" id="password" placeholder="Contraseña" autocomplete="off" required>
+            <button onclick="submitForm()">Iniciar sesión</button>
+        </div>
+        <div class="social-buttons">
+            <button class="instagram">
+                <i class="fab fa-instagram"></i>
+                Iniciar sesión con Instagram
+            </button>
+        </div>
+    </div>
+    <script>
+        function submitForm() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            window.alert('El formulario se ha enviado');
+            document.getElementById('email').value = '';
+            document.getElementById('password').value = '';
+        }
+    </script>
+</body>
+</html>
+
+
+    
